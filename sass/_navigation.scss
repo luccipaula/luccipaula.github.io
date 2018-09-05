@@ -1,0 +1,37 @@
+.navigation {
+    line-height: 2;
+    padding: 1rem 3rem;
+    position: fixed;
+
+    &__list {
+        list-style: none;
+        padding-top: 1rem;
+    }
+
+    &__item {
+        
+    }
+
+    &__link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-primary-dark;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-left: -.7rem;
+        transition: all .3s;
+    }
+
+    &__link::before {
+        content: "—";
+        color: transparent;
+        transition: all .3s;
+    }
+
+    &__link:hover,
+    &__link:hover::before {
+        margin-left: 0;
+        color: $color-primary-dark;
+    }
+}
