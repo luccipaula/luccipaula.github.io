@@ -30,7 +30,8 @@ body {
 .navigation {
   line-height: 2;
   padding: 1rem 3rem;
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }
   .navigation__list {
     list-style: none;
     padding-top: 1rem; }
@@ -94,11 +95,11 @@ body {
     height: 27rem;
     filter: contrast(80%); }
     .polaroids__image--1 {
-      background-image: url(../img/blackpool.jpg); }
+      background-image: url(../img/blackpool.png); }
     .polaroids__image--2 {
-      background-image: url(../img/glencoe.jpg); }
+      background-image: url(../img/glencoe.png); }
     .polaroids__image--3 {
-      background-image: url(../img/nairn.jpg); }
+      background-image: url(../img/nairn.png); }
 
 .footer {
   background-color: #000; }
