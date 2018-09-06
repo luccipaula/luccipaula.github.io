@@ -1,4 +1,81 @@
+// POLAROID VARIABLES
+$photo-width: 20rem;
+$photo-height: 27rem;
+
+$frame-top: 3rem;
+$frame-sides: 1.5rem;
+$frame-bottom: 7rem;
+
+
 .header {
     height: 100vh;
     background-color: $bg-color;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.polaroids {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: max-content;
+
+    &__frame {
+        background: linear-gradient(to bottom, #fafafa 10%, #fff 90%);
+        padding: $frame-top $frame-sides $frame-bottom $frame-sides;
+        border-radius: 1%;
+        transition: all .3s;
+
+        display: grid;
+        justify-content: center;
+
+        &--1 {
+            box-shadow: -.5rem .5rem 1rem rgba($color-primary-dark, .2);
+            transform: rotate(-20deg);
+            z-index: 4;
+            margin-right: -6rem;
+        }
+
+        &--2 {
+            box-shadow: .5rem 1rem 1rem rgba($color-primary-dark, .2);
+            transform: rotate(15deg);
+            z-index: 5;
+        }
+
+        &--3 {
+            box-shadow: 0 1rem 1rem rgba($color-primary-dark, .2);
+            transform: rotate(-1deg);
+            z-index: 3;
+            margin-left: -2rem;
+        }
+
+        &:hover {
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 1.5rem 1rem rgba($color-primary-dark, .2);
+            z-index: 10;
+        }
+    }
+
+    &__image {
+        background-size: cover;
+        background-position: center;
+        width: $photo-width;
+        height: $photo-height;
+        filter: contrast(80%);
+
+        &--1 {
+            background-image: url(../img/nairn.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/glencoe.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/blackpool.jpg);
+        }
+    }
 }

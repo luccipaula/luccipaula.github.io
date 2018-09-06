@@ -20,7 +20,12 @@ body {
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: -.1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
+  .heading a,
+  .heading a:visited {
+    text-decoration: none;
+    color: inherit; }
 
 .navigation {
   line-height: 2;
@@ -47,7 +52,53 @@ body {
 
 .header {
   height: 100vh;
-  background-color: aliceblue; }
+  background-color: aliceblue;
+  display: grid;
+  justify-content: center;
+  align-content: center; }
+
+.polaroids {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: max-content; }
+  .polaroids__frame {
+    background: linear-gradient(to bottom, #fafafa 10%, #fff 90%);
+    padding: 3rem 1.5rem 7rem 1.5rem;
+    border-radius: 1%;
+    transition: all .3s;
+    display: grid;
+    justify-content: center; }
+    .polaroids__frame--1 {
+      box-shadow: -0.5rem 0.5rem 1rem rgba(24, 24, 25, 0.2);
+      transform: rotate(-20deg);
+      z-index: 4;
+      margin-right: -6rem; }
+    .polaroids__frame--2 {
+      box-shadow: 0.5rem 1rem 1rem rgba(24, 24, 25, 0.2);
+      transform: rotate(15deg);
+      z-index: 5; }
+    .polaroids__frame--3 {
+      box-shadow: 0 1rem 1rem rgba(24, 24, 25, 0.2);
+      transform: rotate(-1deg);
+      z-index: 3;
+      margin-left: -2rem; }
+    .polaroids__frame:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 1.5rem 1rem rgba(24, 24, 25, 0.2);
+      z-index: 10; }
+  .polaroids__image {
+    background-size: cover;
+    background-position: center;
+    width: 20rem;
+    height: 27rem;
+    filter: contrast(80%); }
+    .polaroids__image--1 {
+      background-image: url(../img/nairn.jpg); }
+    .polaroids__image--2 {
+      background-image: url(../img/glencoe.jpg); }
+    .polaroids__image--3 {
+      background-image: url(../img/blackpool.jpg); }
 
 .footer {
   background-color: #000; }

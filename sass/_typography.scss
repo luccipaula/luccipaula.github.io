@@ -3,4 +3,11 @@
     font-weight: 600;
     letter-spacing: -.1rem;
     text-transform: uppercase;
+    cursor: pointer;
+    
+    a,
+    a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
 }
