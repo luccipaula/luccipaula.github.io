@@ -94,11 +94,11 @@ body {
     height: 27rem;
     filter: contrast(80%); }
     .polaroids__image--1 {
-      background-image: url(../img/nairn.jpg); }
+      background-image: url(../img/blackpool.jpg); }
     .polaroids__image--2 {
       background-image: url(../img/glencoe.jpg); }
     .polaroids__image--3 {
-      background-image: url(../img/blackpool.jpg); }
+      background-image: url(../img/nairn.jpg); }
 
 .footer {
   background-color: #000; }
