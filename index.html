@@ -9,9 +9,16 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    		$(".fade").hide(0).delay(500).fadeIn(3000);
+		});
+	</script>
+
 	<title>Lucci Paula</title>
 </head>
-<body class="container">
+<body class="container fade">
 
 	<nav class="navigation">
 		<h1 class="heading"><a href="https://luccipaula.github.io">Lucci Paula</a></h1>
@@ -40,7 +47,7 @@
 		</ul>
 	</nav>
 	
-	<header class="header" id="home">
+	<header class="header fade" id="home">
 		<div class="polaroids">
 			<div class="polaroids__frame polaroids__frame--1">
 				<div class="polaroids__image polaroids__image--1"></div>
@@ -118,6 +125,5 @@
 		</div>
 		
 	</footer>
-
 </body>
 </html>
