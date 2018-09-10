@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  background-color: aliceblue;
   font-family: "Montserrat", sans-serif;
   color: #181819;
   line-height: 1.6; }
@@ -29,7 +30,7 @@ body {
 
 .navigation {
   line-height: 2;
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   position: fixed;
   z-index: 100; }
   .navigation__list {
@@ -53,7 +54,6 @@ body {
 
 .header {
   height: 100vh;
-  background-color: aliceblue;
   display: grid;
   justify-content: center;
   align-content: center; }
@@ -100,6 +100,31 @@ body {
       background-image: url(../img/glencoe.png); }
     .polaroids__image--3 {
       background-image: url(../img/nairn.png); }
+
+.about__box {
+  padding: 0 11rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+
+.about__image {
+  width: 100%;
+  grid-column: 2; }
+
+.about__text {
+  padding-right: 3rem;
+  font-size: 2rem;
+  font-weight: 200;
+  grid-column: 1;
+  grid-row: 1; }
+
+.reviews {
+  display: grid; }
+  .reviews__list {
+    padding: 3rem 11rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .reviews__img {
+    width: 20rem; }
 
 .footer {
   background-color: #000; }

@@ -1,0 +1,26 @@
+.reviews {
+
+    display: grid;
+
+    &__heading {
+    }
+
+    &__list {
+        padding: 3rem 11rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__img {
+        width: 20rem;
+    }
+
+    &__details {
+
+    }
+
+    &__text {
+
+    }
+}

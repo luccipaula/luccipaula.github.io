@@ -1,0 +1,24 @@
+.about {
+
+    &__box {
+        padding: 0 11rem;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    &__image {
+        width: 100%;
+
+        grid-column: 2;
+    }
+
+    &__text {
+        padding-right: 3rem;
+        font-size: 2rem;
+        font-weight: 200;
+
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
