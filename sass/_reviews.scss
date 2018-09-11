@@ -1,6 +1,7 @@
 .reviews {
 
     display: grid;
+    justify-items: center;
 
     &__heading {
     }
@@ -9,18 +10,61 @@
         padding: 3rem 11rem;
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: minmax(min-content, max-content);
+        grid-gap: 2rem;
+        justify-items: center;
+    }
+
+    &__client {
+        width: 65%;
+        background-color: rgba(#fff, .7);
+        padding: 4rem;
+
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-gap: 2rem;
+    }
+
+    &__figure {
+        width: 15rem;
+        height: 15rem;
+        position: relative;
+        overflow: hidden;
     }
 
     &__img {
-        width: 20rem;
+        height: 100%;
+        transform: scale(1);
+        transition: all .3s;
     }
 
-    &__details {
-
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        opacity: 0;
+        transition: all .3s;
     }
 
     &__text {
+        font-size: 1.3rem;
+        font-weight: 300;
 
+        align-self: center;
+    }
+
+    &__client:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &__client:hover &__img {
+        transform: scale(1.2);
+        filter: blur(3px) brightness(80%);
     }
 }
