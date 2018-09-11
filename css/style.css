@@ -28,6 +28,12 @@ body {
     text-decoration: none;
     color: inherit; }
 
+.heading-3 {
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 3rem; }
+
 .navigation {
   line-height: 2;
   padding: 1rem 2.5rem;
@@ -101,21 +107,39 @@ body {
     .polaroids__image--3 {
       background-image: url(../img/nairn.png); }
 
-.about__box {
-  padding: 0 11rem;
+.about {
   display: grid;
-  grid-template-columns: 2fr 1fr; }
-
-.about__image {
-  width: 100%;
-  grid-column: 2; }
-
-.about__text {
-  padding-right: 3rem;
-  font-size: 2rem;
-  font-weight: 200;
-  grid-column: 1;
-  grid-row: 1; }
+  justify-items: center;
+  grid-gap: 3rem; }
+  .about__box {
+    width: 75%;
+    padding: 0 11rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(1fr, max-content));
+    grid-gap: 3rem; }
+  .about__image {
+    width: 40rem;
+    box-shadow: 0 1rem 2rem rgba(24, 24, 25, 0.2);
+    transition: all .3s;
+    z-index: 10; }
+    .about__image:hover {
+      box-shadow: 0 2rem 3rem rgba(24, 24, 25, 0.2); }
+  .about__caption {
+    padding-top: 1rem;
+    text-align: center;
+    transform: translateY(-3rem);
+    transition: all .3s;
+    opacity: 0;
+    z-index: 1; }
+  .about__image:hover + .about__caption {
+    opacity: 1;
+    transform: translateY(0); }
+  .about__text {
+    font-size: 1.5rem;
+    font-weight: 200;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center; }
 
 .reviews {
   display: grid;
@@ -124,12 +148,13 @@ body {
     padding: 3rem 11rem;
     display: grid;
     grid-template-columns: minmax(min-content, max-content);
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     justify-items: center; }
   .reviews__client {
     width: 65%;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 4rem;
+    box-shadow: 0 1rem 2rem rgba(24, 24, 25, 0.1);
     display: grid;
     grid-template-columns: max-content 1fr;
     grid-gap: 2rem; }
