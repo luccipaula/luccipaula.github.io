@@ -1,14 +1,29 @@
 .footer {
-    background-color: #000;
+    height: 20vh;
+    background-color: $color-primary-dark;
+    text-transform: uppercase;
+
+    &__container {
+        padding: 3rem;
+
+        display: grid;
+        justify-items: center;
+        grid-gap: 1rem;
+    }
 
     &__email {
-
+        color: #fff;
+        text-decoration: none;
     }
 
     .social {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
         
         &__link {
-
+            text-decoration: none;
         }
 
         &__icon {

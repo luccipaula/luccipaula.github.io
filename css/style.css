@@ -26,7 +26,7 @@ body {
   .heading a,
   .heading a:visited {
     text-decoration: none;
-    color: inherit; }
+    color: #181819; }
 
 .heading-3 {
   font-size: 3rem;
@@ -122,8 +122,6 @@ body {
     box-shadow: 0 1rem 2rem rgba(24, 24, 25, 0.2);
     transition: all .3s;
     z-index: 10; }
-    .about__image:hover {
-      box-shadow: 0 2rem 3rem rgba(24, 24, 25, 0.2); }
   .about__caption {
     padding-top: 1rem;
     text-align: center;
@@ -140,6 +138,23 @@ body {
     grid-column: 2;
     grid-row: 1;
     align-self: center; }
+
+.skills {
+  display: grid;
+  justify-items: center; }
+  .skills__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .skills__icon {
+    font-size: 10rem;
+    padding: 0 2rem;
+    color: #787c7f; }
+    .skills__icon:hover {
+      color: #bde0ff; }
+
+.portfolio {
+  display: grid;
+  justify-items: center; }
 
 .reviews {
   display: grid;
@@ -190,6 +205,22 @@ body {
     filter: blur(3px) brightness(80%); }
 
 .footer {
-  background-color: #000; }
-  .footer .social__icon {
-    background-color: #fff; }
+  height: 20vh;
+  background-color: #181819;
+  text-transform: uppercase; }
+  .footer__container {
+    padding: 3rem;
+    display: grid;
+    justify-items: center;
+    grid-gap: 1rem; }
+  .footer__email {
+    color: #fff;
+    text-decoration: none; }
+  .footer .social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; }
+    .footer .social__link {
+      text-decoration: none; }
+    .footer .social__icon {
+      background-color: #fff; }

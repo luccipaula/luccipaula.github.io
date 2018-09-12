@@ -1,0 +1,21 @@
+.skills {
+
+    display: grid;
+    justify-items: center;
+
+    &__list {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__icon {
+        font-size: 10rem;
+        padding: 0 2rem;
+        color: $color-gray;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
