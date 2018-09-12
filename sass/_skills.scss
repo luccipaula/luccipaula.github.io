@@ -2,20 +2,38 @@
 
     display: grid;
     justify-items: center;
+    grid-gap: 3rem;
 
     &__list {
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 6rem;
     }
 
     &__icon {
         font-size: 10rem;
         padding: 0 2rem;
         color: $color-gray;
+        transition: all .3s;
 
         &:hover {
             color: $color-primary;
         }
+    }
+
+    &__caption {
+        padding: 1rem;
+        color: $color-gray;
+        text-align: center;
+        transform: translateY(-2rem);
+        opacity: 0;
+        z-index: -1;
+        transition: all .3s;
+    }
+
+    &__icon:hover + &__caption {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

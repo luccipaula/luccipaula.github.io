@@ -22,11 +22,12 @@
 
     &__caption {
         padding-top: 1rem;
+        color: $color-gray;
         text-align: center;
         transform: translateY(-3rem);
-        transition: all .3s;
         opacity: 0;
-        z-index: 1;
+        z-index: -1;
+        transition: all .3s;
     }
 
     &__image:hover + &__caption {
@@ -35,6 +36,7 @@
     }
 
     &__text {
+        color: $color-gray-dark-2;
         font-size: 1.5rem;
         font-weight: 200;
 

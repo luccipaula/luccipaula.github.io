@@ -3,6 +3,9 @@ $color-primary-dark: #181819;
 $color-primary: #bde0ff;
 
 $color-gray: #787c7f;
+$color-gray-dark: #606366;
+$color-gray-dark-1: #484a4c;
+$color-gray-dark-2: #303133;
 
 $bg-color: aliceblue;
 
@@ -31,4 +34,8 @@ body {
     font-family: $font-primary;
     color: $color-primary-dark;
     line-height: 1.6;
+}
+
+section {
+    padding-bottom: 10rem;
 }

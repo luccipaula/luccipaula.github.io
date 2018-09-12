@@ -17,6 +17,9 @@ body {
   color: #181819;
   line-height: 1.6; }
 
+section {
+  padding-bottom: 10rem; }
+
 .heading {
   font-size: 3rem;
   font-weight: 600;
@@ -29,8 +32,9 @@ body {
     color: #181819; }
 
 .heading-3 {
-  font-size: 3rem;
-  font-weight: 200;
+  color: #181819;
+  font-size: 2rem;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 3rem; }
 
@@ -124,15 +128,17 @@ body {
     z-index: 10; }
   .about__caption {
     padding-top: 1rem;
+    color: #787c7f;
     text-align: center;
     transform: translateY(-3rem);
-    transition: all .3s;
     opacity: 0;
-    z-index: 1; }
+    z-index: -1;
+    transition: all .3s; }
   .about__image:hover + .about__caption {
     opacity: 1;
     transform: translateY(0); }
   .about__text {
+    color: #303133;
     font-size: 1.5rem;
     font-weight: 200;
     grid-column: 2;
@@ -141,16 +147,30 @@ body {
 
 .skills {
   display: grid;
-  justify-items: center; }
+  justify-items: center;
+  grid-gap: 3rem; }
   .skills__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6rem; }
   .skills__icon {
     font-size: 10rem;
     padding: 0 2rem;
-    color: #787c7f; }
+    color: #787c7f;
+    transition: all .3s; }
     .skills__icon:hover {
       color: #bde0ff; }
+  .skills__caption {
+    padding: 1rem;
+    color: #787c7f;
+    text-align: center;
+    transform: translateY(-2rem);
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s; }
+  .skills__icon:hover + .skills__caption {
+    opacity: 1;
+    transform: translateY(0); }
 
 .portfolio {
   display: grid;
@@ -194,6 +214,7 @@ body {
     opacity: 0;
     transition: all .3s; }
   .reviews__text {
+    color: #606366;
     font-size: 1.3rem;
     font-weight: 300;
     align-self: center; }
