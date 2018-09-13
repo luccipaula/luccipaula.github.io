@@ -27,7 +27,13 @@
         }
 
         &__icon {
+            fill: #fff;
             background-color: #fff;
+
+            &:hover {
+                fill: $color-primary;
+                background-color: $color-primary;
+            }
         }
     }
 }
