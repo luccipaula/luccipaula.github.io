@@ -1,10 +1,9 @@
 .footer {
-    height: 20vh;
     background-color: $color-primary-dark;
     text-transform: uppercase;
 
     &__container {
-        padding: 3rem;
+        height: 20vh;
 
         display: grid;
         justify-items: center;
@@ -19,7 +18,7 @@
     .social {
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr
         grid-gap: 1rem;
         
         &__link {
