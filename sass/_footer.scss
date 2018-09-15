@@ -3,7 +3,7 @@
     text-transform: uppercase;
 
     &__container {
-        height: 20vh;
+        padding: 3rem;
 
         display: grid;
         justify-items: center;
@@ -18,7 +18,7 @@
     .social {
 
         display: grid;
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
         grid-gap: 1rem;
         
         &__link {
@@ -26,12 +26,14 @@
         }
 
         &__icon {
+            height: 4rem;
+            width: 4rem;
             fill: #fff;
-            background-color: #fff;
+            //background-color: #fff;
 
             &:hover {
                 fill: $color-primary;
-                background-color: $color-primary;
+                //background-color: $color-primary;
             }
         }
     }
