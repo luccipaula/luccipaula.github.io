@@ -23,8 +23,30 @@
         grid-auto-rows: minmax(min-content, max-content);
     }
 
+    &__figure {
+        position: relative;
+        overflow: hidden;
+    }
+
     &__img {
         width: 100%;
+        overflow: hidden;
+        transition: all .3s;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: #fff;
+        background-color: $color-primary;
+        padding: 1rem 4rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        opacity: 0;
+        transition: all .3s;
     }
 
     &__title {
@@ -39,5 +61,14 @@
         padding: 0 1rem 1rem 1rem;
         font-size: 1.3rem;
         font-weight: 400;
+    }
+
+    &__figure:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &__figure:hover &__img {
+        filter: blur(1px) brightness(50%);
     }
 }

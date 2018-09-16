@@ -191,8 +191,26 @@ section {
     display: grid;
     justify-items: center;
     grid-auto-rows: minmax(min-content, max-content); }
+  .portfolio__figure {
+    position: relative;
+    overflow: hidden; }
   .portfolio__img {
-    width: 100%; }
+    width: 100%;
+    overflow: hidden;
+    transition: all .3s; }
+  .portfolio__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    background-color: #bde0ff;
+    padding: 1rem 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: all .3s; }
   .portfolio__title {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -203,6 +221,11 @@ section {
     padding: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
     font-weight: 400; }
+  .portfolio__figure:hover .portfolio__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .portfolio__figure:hover .portfolio__img {
+    filter: blur(1px) brightness(50%); }
 
 .reviews {
   display: grid;
