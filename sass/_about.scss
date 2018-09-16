@@ -15,7 +15,9 @@
 
     &__image {
         width: 40rem;
-        box-shadow: 0 1rem 2rem rgba($color-primary-dark, .2);
+        background-color: rgba(#fff, .7);
+        padding: 1rem;
+        box-shadow: 0 1rem 2rem rgba($color-primary-dark, .1);
         transition: all .3s;
         z-index: 10;
     }

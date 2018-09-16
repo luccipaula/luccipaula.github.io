@@ -29,11 +29,10 @@
             height: 4rem;
             width: 4rem;
             fill: #fff;
-            //background-color: #fff;
+            transition: all .3s;
 
             &:hover {
                 fill: $color-primary;
-                //background-color: $color-primary;
             }
         }
     }
