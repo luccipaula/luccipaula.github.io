@@ -221,6 +221,12 @@ section {
     padding: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
     font-weight: 400; }
+  .portfolio__tools {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid #606366; }
   .portfolio__figure:hover .portfolio__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }

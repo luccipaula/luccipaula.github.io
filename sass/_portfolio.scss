@@ -63,6 +63,14 @@
         font-weight: 400;
     }
 
+    &__tools {
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        border: 1px solid $color-gray-dark;
+    }
+
     &__figure:hover &__caption {
         opacity: 1;
         transform: translate(-50%, -50%);
