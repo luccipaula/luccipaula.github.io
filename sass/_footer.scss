@@ -13,6 +13,11 @@
     &__email {
         color: #fff;
         text-decoration: none;
+        transition: all .3s;
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 
     .social {

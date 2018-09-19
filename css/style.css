@@ -317,7 +317,10 @@ section {
     grid-gap: 1rem; }
   .footer__email {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all .3s; }
+    .footer__email:hover {
+      color: #bde0ff; }
   .footer .social {
     display: grid;
     grid-template-columns: 1fr;
