@@ -312,6 +312,20 @@ section {
   .resume__content {
     width: 75%;
     background-color: rgba(255, 255, 255, 0.7); }
+  .resume__download {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem; }
+  .resume__link:link, .resume__link:visited {
+    text-decoration: none; }
+  .resume__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #606366;
+    margin: 0 1rem;
+    transition: all .2s; }
+    .resume__icon:hover {
+      fill: #bde0ff; }
 
 .footer {
   background-color: #181819;
