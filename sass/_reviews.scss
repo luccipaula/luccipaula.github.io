@@ -57,6 +57,19 @@
         align-self: center;
     }
 
+    &__social {
+        
+        grid-column: 2;
+        justify-self: end;
+    }
+
+    &__link {
+        color: inherit;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
     &__client:hover &__caption {
         opacity: 1;
         transform: translate(-50%, -50%);

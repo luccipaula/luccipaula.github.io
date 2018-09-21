@@ -275,6 +275,14 @@ section {
     font-size: 1.3rem;
     font-weight: 300;
     align-self: center; }
+  .reviews__social {
+    grid-column: 2;
+    justify-self: end; }
+  .reviews__link {
+    color: inherit;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none; }
   .reviews__client:hover .reviews__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
@@ -354,3 +362,5 @@ section {
       transition: all .3s; }
       .footer .social__icon:hover {
         fill: #bde0ff; }
+  .footer__credits {
+    color: #fff; }
