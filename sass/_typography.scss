@@ -27,4 +27,8 @@
     @media only screen and (max-width: $bp-large) {
         padding: 10rem 1.5rem 1.5rem 1.5rem;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 13rem 1.5rem 1.5rem 1.5rem;
+    }
 }
