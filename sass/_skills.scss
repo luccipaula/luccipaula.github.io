@@ -9,6 +9,15 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 6rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-gap: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+        }
     }
 
     &__icon {
@@ -16,6 +25,10 @@
         padding: 0 2rem;
         color: $color-gray;
         transition: all .3s;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 7rem;
+        }
 
         &:hover {
             color: $color-primary;

@@ -4,6 +4,11 @@
     letter-spacing: -.1rem;
     text-transform: uppercase;
     cursor: pointer;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 2.5rem;
+        float: left;
+    }
     
     a,
     a:visited {
@@ -18,4 +23,8 @@
     font-weight: 700;
     text-transform: uppercase;
     padding: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 10rem 1.5rem 1.5rem 1.5rem;
+    }
 }

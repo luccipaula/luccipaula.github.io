@@ -10,6 +10,10 @@
         grid-template-columns: minmax(min-content, max-content);
         grid-gap: 3rem;
         justify-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 2rem;
+        }
     }
 
     &__client {
@@ -21,6 +25,19 @@
         display: grid;
         grid-template-columns: max-content 1fr;
         grid-gap: 2rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
     }
 
     &__figure {
@@ -61,6 +78,10 @@
         
         grid-column: 2;
         justify-self: end;
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-column: 1;
+        }
     }
 
     &__link {
