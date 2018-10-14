@@ -1,0 +1,84 @@
+.navigation {
+    line-height: 2;
+    padding: 1rem 2.5rem;
+    position: fixed;
+    z-index: 100;
+
+    @media only screen and (max-width: $bp-large) {
+        width: 100%;
+        background-color: $bg-color;
+    }
+
+    h1 {
+
+        @media only screen and (max-width: $bp-small) {
+            float: none;
+            text-align: center;
+        }
+    }
+
+    &__checkbox {
+
+    }
+
+    &__button {
+
+    }
+
+    &__background {
+        background-color: #fff;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        margin-left: 70%;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 2.5rem;
+    }
+
+    &__item {
+        padding-bottom: 1rem;
+    }
+
+    &__link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-primary-dark;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-left: -.7rem;
+        transition: all .3s;
+
+        @media only screen and (max-width: $bp-large) {
+            border-bottom: 1px solid transparent;
+            margin-left: 0;
+        }
+    }
+
+    &__link::before {
+        content: "—";
+        color: transparent;
+        transition: all .3s;
+
+        @media only screen and (max-width: $bp-large) {
+            display: none;
+        }
+    }
+
+    &__link:hover,
+    &__link:hover::before {
+        margin-left: 0;
+        color: $color-primary-dark;
+    }
+
+    &__link:hover {
+
+        @media only screen and (max-width: $bp-large) {
+            border-bottom: 1px solid $color-primary-dark;
+        }
+    }
+}
