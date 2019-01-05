@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "Lucci Paula Github Page",
   "main": "index.js",
-  "homepage": "https://github.com/luccipaula/luccipaula.github.io",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
-    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "author": "Lucci",
   "license": "ISC",
@@ -25,7 +23,6 @@
     "node-sass": "^4.10.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
-    "vue-gh-pages": "^1.19.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
