@@ -1,0 +1,25 @@
+.dark-theme {
+    color: $color-light;
+    background: $color-dark;
+
+    .footer {
+        position: absolute;
+        bottom: 4rem;
+        width: 100%;
+        text-align: center;
+
+        &__icon {
+            color: $color-light;
+            font-size: 2rem;
+            padding: .8rem;
+            -webkit-text-stroke: 1px transparent;
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover {
+                color: transparent;
+                -webkit-text-stroke: 1px $color-light;
+            }
+        }
+    }
+}
