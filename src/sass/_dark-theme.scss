@@ -2,6 +2,32 @@
     color: $color-light;
     background: $color-dark;
 
+    .main {
+
+        &__heading {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+            padding: 1.5rem 2rem;
+            font-family: $font-heading;
+            text-align: center;
+
+            &--status {
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                padding: 4rem;
+                font-family: $font-heading;
+                letter-spacing: .2rem;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+
+        &__text {
+            color: $color-gray;
+        }
+    }
+
     .footer {
         position: absolute;
         bottom: 4rem;
