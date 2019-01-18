@@ -1,39 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-    	    $(".fade").hide(0).delay(500).fadeIn(3000);
-        });
-    </script>
-    
-    <title>Lucci Paula</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+	<title>Lucci Paula</title>
 </head>
-<body class="fade dark-theme">
+<body class="container">
 
-    <div class="main">
-        <h1 class="main__heading">Lucci Paula</h1>
+    <nav class="navigation">
 
-        <p class="main__text">
-            Hi I'm Lucci, a front end developer, graphic designer and artist from Southern California. I design clean, functional and elegant solutions in the form of websites, web apps and digital graphics.
-        </p>
+        <h1 class="heading-1 navigation__logo">
+            <a href="#" class="navigation__logo--link">Lucci Paula</a>
+        </h1>
 
-        <h2 class="main__heading--status">// Under Construction //</h2>
-    </div>
+        <input type="checkbox" class="navigation__check" id="nav-check">
 
-    <footer class="footer">
-        <a href="https://github.com/luccipaula" target="_blank"><i class="fa fa-github footer__icon" aria-hidden="true"></i></a>
-        <a href="https://linkedin.com/in/luccipaula" target="_blank"><i class="fa fa-linkedin-square footer__icon" aria-hidden="true"></i></a>
-        <a href="mailto:luccipc@gmail.com" target="_blank"><i class="fa fa-envelope footer__icon" aria-hidden="true"></i></a>
-        <a href="https://luccipaula.com/resume" target="_blank"><i class="fa fa-file footer__icon" aria-hidden="true"></i></a>
-    </footer>
+        <label for="nav-check" class="navigation__btn">
+            <span class="navigation__btn--icon"></span>
+        </label>
+
+        <ul class="navigation__list">
+            <li>
+                <a href="#about" class="navigation__list--link">About</a>
+            </li>
+            <li>
+                <a href="#skills" class="navigation__list--link">Skills</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="navigation__list--link">Portfolio</a>
+            </li>
+            <li>
+                <a href="#reviews" class="navigation__list--link">Reviews</a>
+            </li>
+            <li>
+                <a href="https://luccipaula.com/resume" class="navigation__list--link">Resume</a>
+            </li>
+            <li>
+                <a href="#contact" class="navigation__list--link">Contact</a>
+            </li>
+            <li class="navigation__theme" id="theme">
+                <button class="navigation__theme--switch">Theme</button>
+            </li>
+        </ul>
+
+    </nav>
+
+    <header class="header">
+        <div class="header__text">
+            <h2 class="header__heading heading-2">
+                Clean, functional and elegant design solutions
+            </h2>
+        </div>
+        <a href="#about" class="header__icon">&or;</a>
+    </header>
+
+    <section class="about" id="about" data-aos="fade-up" data-aos-duration="500">
+        <img src="img/profile-icon.png" alt="Me" class="about__icon">
+        <h2 class="about__heading heading-2">About</h2>
     
+        <p class="about__text p-text">Hi I'm Lucci, a front end developer, graphic designer and artist from Southern California. I design clean, functional and elegant solutions in the form of websites, web apps and digital graphics. Currently I work remotely as a web developer and graphic designer for a British music production YouTube channel with over 150,000 subscribers.</p>
+        <p class="about__text p-text">The artistic aspects of web development have always appealed to me most, which is why I narrowed my focus to the front end. Since taking some remarkably outdated programming courses in college, I've been enthusiastically upgrading my skills with freeCodeCamp, Udemy courses and a few awesome clients. I have a knack for adapting quickly and learning new things but I'm also continually building upon my strengths.</p>
+        <p class="about__text p-text">I am ecstatic at the thought of applying my skills at a creative agency and I greatly look forward to the potential opportunity of working alongside you and your team.</p>
+    </section>
+
+    <section class="skills" id="skills" data-aos="fade-up" data-aos-duration="500">
+        <h2 class="skills__heading heading-2">Skills</h2>
+        
+        <figure class="skills__figure" data-aos="fade-right" data-aos-duration="500">
+            <i class="devicon-html5-plain"></i>
+            <figcaption class="skills__caption">HTML5</figcaption>
+        </figure>
+        <figure class="skills__figure" data-aos="fade-right" data-aos-duration="500">
+            <i class="devicon-css3-plain"></i>
+            <figcaption class="skills__caption">CSS3</figcaption>
+        </figure>
+        <figure class="skills__figure" data-aos="fade-right" data-aos-duration="500">
+            <i class="devicon-javascript-plain"></i>
+            <figcaption class="skills__caption">JavaScript</figcaption>
+        </figure>
+        <figure class="skills__figure" data-aos="fade-right" data-aos-duration="500">
+            <i class="devicon-photoshop-line"></i>
+            <figcaption class="skills__caption">Photoshop</figcaption>
+        </figure>
+        <figure class="skills__figure" data-aos="fade-left" data-aos-duration="500">
+            <i class="devicon-sass-original"></i>
+            <figcaption class="skills__caption">Sass</figcaption>
+        </figure>
+        <figure class="skills__figure" data-aos="fade-left" data-aos-duration="500">
+            <i class="devicon-jquery-plain"></i>
+            <figcaption class="skills__caption">jQuery</figcaption>
+        </figure>
+        <figure class="skills__figure" data-aos="fade-left" data-aos-duration="500">
+            <i class="devicon-git-plain"></i>
+            <figcaption class="skills__caption">Git</figcaption>
+        </figure>
+        <figure class="skills__figure" data-aos="fade-left" data-aos-duration="500">
+            <i class="devicon-wordpress-plain"></i>
+            <figcaption class="skills__caption">Wordpress</figcaption>
+        </figure>
+    </section>
+
+    <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="500">
+        <h2 class="portfolio__heading heading-2">Portfolio</h2>
+        
+        <div class="portfolio__grid">
+			<div class="portfolio__card" data-aos="fade-up" data-aos-duration="500">
+				<figure class="portfolio__figure">
+                    <a href="https://luccipaula.com/solario">
+                        <img src="img/solario-tn.png" alt="Solario" class="portfolio__img">
+                    </a>
+				</figure>
+				<h3 class="portfolio__title">
+					<a href="https://luccipaula.com/solario">Solario</a>
+				</h3>
+            </div>
+            <div class="portfolio__card" data-aos="fade-up" data-aos-duration="500">
+				<figure class="portfolio__figure">
+                    <a href="https://michaelwynneaudio.com">
+                        <img src="img/mwaudio-tn.png" alt="Michael Wynne Audio" class="portfolio__img">
+                    </a>
+				</figure>
+				<h3 class="portfolio__title">
+					<a href="https://michaelwynneaudio.com">Michael Wynne Audio</a>
+				</h3>
+            </div>
+            <div class="portfolio__card" data-aos="fade-up" data-aos-duration="500">
+				<figure class="portfolio__figure">
+                    <a href="https://michaelwynneaudio.com">
+                        <img src="img/youtube-tn.png" alt="In The Mix" class="portfolio__img">
+                    </a>
+				</figure>
+				<h3 class="portfolio__title">
+					<a href="https://michaelwynneaudio.com">In The Mix (Graphic Design)</a>
+				</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews" data-aos="fade-up" data-aos-duration="500">
+        <h2 class="reviews__heading heading-2">Reviews</h2>
+        
+        <div class="reviews__list">
+            <div class="reviews__client" data-aos="fade-up" data-aos-duration="500">
+                <figure class="reviews__figure">
+                    <img src="img/michael.jpg" alt="Review 3" class="reviews__img">
+                    <figcaption class="reviews__caption">
+                        Michael Wynne
+                    </figcaption>
+                </figure>
+                <p class="reviews__text p-text">"From the initial concept to the final website Lucci went above and beyond to not only create a stunning and professional custom site from the ground up (no templates in sight) but to help me unlock my creativity by suggesting new and innovative website design that I could only have dreamed of. My website took shape faster and more fluidly than I could have imagined without ever feeling like it was out of my hands. She was professional when requesting content for the site (photos and text etc) and helped refine the site into a highly functional, expert design. <br><br>I highly recommend Lucci for her skills not only in web development, but also graphic design. When paired with her amazing aesthetic vision/taste, your project or website will be in the safest of hands."</p>
+                <span class="reviews__social">
+                    <a href="https://instagram.com/michael.inthemix" class="reviews__link" target="_blank">@michael.inthemix</a>
+                </span>
+            </div>
+            <div class="reviews__client" data-aos="fade-up" data-aos-duration="500">
+                <figure class="reviews__figure">
+                <img src="img/danny.jpg" alt="Review 2" class="reviews__img">
+                    <figcaption class="reviews__caption">
+                        Danny Christie
+                    </figcaption>
+                </figure>
+                <p class="reviews__text p-text">“Lucci did an amazing job, I am more than happy with the site. Even the logo was exactly what I had in mind. Lucci coded something unique for the website from an idea I had given her to a finished working player. She even edited all my average photography into professional looking images in a little scrolling  gallery, I mean what can’t she do? The answer: nothing. She loves her work and you can see it from the website and her portfolio.<br><br> She’s incredible and will do big things, it's been an absolute pleasure talking and working with her through the concepts and website design. My friends and clients love my website and so do I. If you want an up-to-date professional website along with amazing graphics and photos Lucci is who I would recommend.”</p>
+                <span class="reviews__social">
+                    <a href="https://instagram.com/christieaudio" class="reviews__link" target="_blank">@christieaudio</a>
+                </span>
+            </div>
+            <div class="reviews__client" data-aos="fade-up" data-aos-duration="500">
+                <figure class="reviews__figure">
+                    <img src="img/pyla.jpg" alt="Review 1" class="reviews__img">
+                    <figcaption class="reviews__caption">
+                        Pyla Lara
+                    </figcaption>
+                </figure>
+                <p class="reviews__text p-text">"Lucci was incredible! From the word go she was so supportive of my ideas, and turned them into a reality before my eyes. Her combination of creative mind and hard work has enabled my website to be more vibrant and lively than I could have imagined. Always quick to answer my questions and reassure me when I didn't know what I wanted, she was so easy to communicate with, and always had a solution. I'm so glad I stumbled upon her, because I wouldn't have been able to create my perfect website otherwise."</p>
+                <span class="reviews__social">
+                    <a href="https://instagram.com/pylalara" class="reviews__link" target="_blank">@pylalara</a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer__container">
+            <div class="footer__social">
+                <a href="mailto:luccipc@gmail.com" class="footer__social--link" target="_blank">
+                    <i class="fa fa-envelope footer__social--icon" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/luccipaula" class="footer__social--link" target="_blank">
+                    <i class="fa fa-github footer__social--icon" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/in/luccipaula" class="footer__social--link" target="_blank">
+                    <i class="fa fa-linkedin-square footer__social--icon" aria-hidden="true"></i>
+                </a>
+            </div>
+    
+            <div class="footer__credits">
+                <p>&copy; 2019 by Lucci Paula. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>

@@ -1,0 +1,26 @@
+.heading-1 {
+    font-family: $font-heading;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 2.5rem;
+}
+
+.heading-2 {
+    color: $color-gray-dark;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.p-text {
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    max-width: 50rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    letter-spacing: .05rem;
+}

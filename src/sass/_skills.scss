@@ -1,0 +1,48 @@
+.skills {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 60rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+    &__heading {
+        padding-bottom: 2rem;
+
+        grid-row: 1;
+        grid-column: span 4;
+    }
+
+    &__figure {
+        text-align: center;
+        padding: 1rem 0;
+        opacity: 0;
+
+        i {
+            color: transparent;
+            font-size: 4rem;
+            -webkit-text-stroke: 1px $color-dark;
+            transition: all .3s;
+        }
+
+        &:hover {
+            i {
+                color: $color-dark;
+                -webkit-text-stroke: 1px transparent;
+            }
+    
+            figcaption {
+                color: $color-dark;
+            }
+        }
+    }
+
+    &__caption {
+        color: $color-gray-dark;
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 1rem 0 0;
+        transition: all .3s;
+    }
+    
+} 

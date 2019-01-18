@@ -1,0 +1,43 @@
+.header {
+    height: 100vh;
+    background: linear-gradient(rgba($color-light, .4)), url("../img/light-hero.jpg") no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 100%;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto min-content;
+
+    &__text {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    &__icon {
+        text-decoration: none;
+        color: inherit;
+        padding: 0 2rem 2rem;
+        font-size: 2.5rem;
+        font-weight: 300;
+        align-self: end;
+        animation: arrowBob 2s infinite;
+        opacity: 100;
+        transition: all .3s;
+    }
+}
+
+@keyframes arrowBob {
+    0% {
+        transform: translateY(-25%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-25%);
+    }
+}

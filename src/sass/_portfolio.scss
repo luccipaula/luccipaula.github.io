@@ -1,0 +1,60 @@
+.portfolio {
+    margin: 0 auto;
+    max-width: 60rem;
+
+    display: grid;
+
+    &__grid {
+        padding-top: 4rem;
+
+        display: grid;
+        justify-items: center;
+        grid-gap: 2rem;
+
+        @media screen and (min-width: $bp-larger) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__card {
+
+        display: grid;
+        justify-items: center;
+        grid-auto-rows: minmax(min-content, max-content);
+    }
+
+    &__figure {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: all .3s;
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+
+    &__card:hover &__img {
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding: 1rem;
+
+        a {
+            text-decoration: transparent;
+            color: inherit;
+            transition: all .3s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

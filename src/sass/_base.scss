@@ -1,14 +1,23 @@
 // Imports
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Questrial');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Questrial');
 
 // Color Variables
 $color-dark: #1D1E22;
 $color-light: #fff;
 $color-gray: #8e8e90;
+$color-gray-light: #bbbbbc;
+$color-gray-dark: #333438;
 
 // Font Variables
 $font-primary: 'Open Sans', sans-serif;
 $font-heading: 'Questrial', sans-serif;
+
+// Responsive Breakpoints
+$bp-small: 25em; // 400px/16px
+$bp-medium: 43.75em; // 700px/16px
+$bp-large: 62.5em; // 1000px/16px
+$bp-larger: 87.5em; // 1400px/16px
+$bp-largest: 125em; // 2000px/16px
 
 *,
 *::before,
@@ -22,17 +31,22 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+
+    @media screen and (min-width: $bp-larger) {
+        font-size: 70%;
+    }
 }
 
 body {
     color: $color-dark;
     background: $color-light;
     font-family: $font-primary;
-
-    display: grid;
-    align-items: center;
 }
 
 html, body {
     min-height: 100vh;
+}
+
+section {
+    padding: 8rem 2rem;
 }

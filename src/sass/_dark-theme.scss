@@ -2,49 +2,129 @@
     color: $color-light;
     background: $color-dark;
 
-    .main {
+    .navigation {
+        
+        &__logo {
 
-        &__heading {
-            font-size: 3rem;
-            text-transform: uppercase;
-            letter-spacing: .3rem;
-            padding: 1.5rem 2rem;
-            font-family: $font-heading;
-            text-align: center;
-
-            &--status {
-                font-size: 1.4rem;
-                text-transform: uppercase;
-                padding: 4rem;
-                font-family: $font-heading;
-                letter-spacing: .2rem;
-                font-weight: 300;
-                text-align: center;
+            &--link,
+            &--link:visited {
+                color: $color-light;
             }
         }
+
+        &__btn {
+    
+            &--icon, 
+            &--icon::before, 
+            &--icon::after {
+                background-color: $color-light;
+            }
+    
+            &:hover &--icon,
+            &:hover &--icon::before,
+            &:hover &--icon::after {
+                background: $color-gray-light;
+            }
+        }
+
+        &__list {
+
+            &--link {
+                color: $color-light;
+
+                &:hover,
+                &:hover::before {
+                    margin-left: 0;
+                    color: inherit;
+                }
+            }
+        }
+
+        &__theme {
+
+            &--switch {
+                color: inherit;
+                border: 1px solid $color-light;
+
+                &:hover {
+                    color: $color-dark;
+                    border: 1px solid transparent;
+                    background-color: $color-light;
+                }
+            }
+        }
+    }
+
+    .header {
+        height: 100vh;
+        background: linear-gradient(rgba($color-dark, .4)), url("../img/dark-hero.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .heading-2 {
+        color: $color-gray-light;
+    }
+
+    .about {
 
         &__text {
             color: $color-gray;
         }
     }
 
-    .footer {
-        position: absolute;
-        bottom: 4rem;
-        width: 100%;
-        text-align: center;
+    .skills {
 
-        &__icon {
-            color: $color-light;
-            font-size: 2rem;
-            padding: .8rem;
-            -webkit-text-stroke: 1px transparent;
-            transition: all .2s;
-            cursor: pointer;
-
-            &:hover {
+        &__figure {
+    
+            i {
                 color: transparent;
+                font-size: 4rem;
                 -webkit-text-stroke: 1px $color-light;
+            }
+    
+            &:hover {
+                i {
+                    color: $color-light;
+                    -webkit-text-stroke: 1px transparent;
+                }
+        
+                figcaption {
+                    color: $color-light;
+                }
+            }
+        }
+
+        &__caption {
+            color: $color-gray;
+        }
+    }
+
+    .reviews {
+
+        &__client {
+            border: 1px solid $color-light;
+        }
+
+        &__text {
+            color: $color-gray;
+        }
+
+        &__link {
+            &:hover {
+                color: $color-gray-light;
+            }
+        }
+    }
+
+    .footer {
+
+        &__social {
+
+            &--icon {
+
+                &:hover {
+                    -webkit-text-stroke: 1px $color-light;
+                }
             }
         }
     }

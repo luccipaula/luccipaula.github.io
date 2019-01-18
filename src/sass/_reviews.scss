@@ -1,0 +1,57 @@
+.reviews {
+    max-width: 60rem;
+    margin: 0 auto;
+
+    display: grid;
+
+    &__heading {
+        padding-bottom: 4rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-gap: 2rem;
+    }
+
+    &__client {
+        padding: 2rem;
+        border: 1px solid $color-dark;
+
+        display: grid;
+        justify-items: center;
+        grid-gap: 2rem;
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__figure {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        height: 100%;
+        filter: grayscale(1);
+        transition: all .3s;
+    }
+
+    &__link {
+        font-size: 1.2rem;
+        color: inherit;
+        text-decoration: transparent;
+        transition: all .3s;
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-gray-dark;
+        }
+    }
+}

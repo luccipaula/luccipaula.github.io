@@ -1,0 +1,181 @@
+.navigation {
+    line-height: 2;
+    padding: 1rem 2rem;
+    position: fixed;
+    z-index: 100;
+
+    width: 100%;
+    transition: all 0.3s ease-in;
+
+    @media screen and (min-width: $bp-large) {
+        background-color: transparent !important;
+    }
+
+    &__logo {
+
+
+        &--link,
+        &--link:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__check {
+        display: none;
+    }
+
+    &__btn {
+        display: block;
+        position: fixed;
+        width: 3rem;
+        height: 3rem;
+        right: 2rem;
+        top: 2rem;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+
+        @media screen and (min-width: $bp-large) {
+            display: none;
+        }
+        
+        &--icon {
+            position: relative;
+            margin-top: 1.4rem;
+            margin-left: .5rem;
+            transition: all .2s;
+        }
+
+        &--icon, 
+        &--icon::before, 
+        &--icon::after {
+            display: block;
+            width: 1.9rem;
+            height: .2rem;
+            background-color: $color-dark;
+        }
+
+        &--icon::before,
+        &--icon::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &--icon::before {
+            top: -.6rem;
+        }
+
+        &--icon::after {
+            top: .6rem;
+        }
+
+        &:hover &--icon,
+        &:hover &--icon::before,
+        &:hover &--icon::after {
+            transition: all .3s;
+            background: $color-gray;
+        }
+    }
+
+    // checkbox trick
+    //@media screen and (max-width: $bp-medium) {
+        &__check:not(:checked) ~ &__list {
+            max-height: 0;
+        }
+    
+        &__check:checked + &__btn &__btn--icon {
+            background: transparent;
+        }
+    
+        &__check:checked + &__btn &__btn--icon::before {
+            top: 0;
+            transform: rotate(135deg);
+        }
+    
+        &__check:checked + &__btn &__btn--icon::after {
+            top: 0;
+            transform: rotate(-135deg);
+        }
+    //}
+
+    &__list {
+        list-style-type: none;
+
+        max-height: 50rem;
+        transition: max-height 0.3s ease-in;
+        overflow-y: hidden;
+
+        @media screen and (min-width: $bp-large) {
+            overflow-y: visible;
+
+            li {
+                width: max-content;
+            }
+        }
+
+        &--link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: inherit;
+            margin-left: -1.3rem;
+            transition: margin-left .3s;
+            font-weight: 400;
+            display: block;
+            padding: .5rem 0;
+            font-size: 1.2rem;
+
+            @media screen and (min-width: $bp-large) {
+                display: inline-block;
+            }
+
+            &::before {
+                content: "— ";
+                color: transparent;
+                transition: all .3s;
+            }
+
+            &:hover,
+            &:hover::before {
+                margin-left: 0;
+                color: $color-dark;
+            }
+        }
+    }
+
+    &__theme {
+        position: relative;
+        top: 1rem;
+        padding-bottom: 3rem;
+
+        @media screen and (min-width: $bp-large) {
+            position: fixed;
+            right: 2rem;
+            top: 2rem;
+        }
+
+        &--switch {
+            color: $color-dark;
+            border: 1px solid $color-dark;
+            background-color: transparent;
+            font-size: 1.1rem;
+            padding: 1rem 3rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all .3s;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                color: $color-light;
+                border: 1px solid transparent;
+                background-color: $color-dark;
+            }
+        }
+    }
+
+}
