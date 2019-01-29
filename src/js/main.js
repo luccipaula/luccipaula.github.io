@@ -12,6 +12,7 @@ document.querySelector('.navigation__theme--switch').addEventListener('click', (
     localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
 });
 
+// Remember theme choice
 if(JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
     document.body.classList.add('dark-theme');
 }
