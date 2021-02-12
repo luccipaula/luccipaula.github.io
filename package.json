@@ -1,7 +1,7 @@
 {
-  "name": "luccipaula",
+  "name": "lucciwynne",
   "version": "1.0.0",
-  "description": "Lucci Paula Github Page",
+  "description": "Lucci Wynne Github Page",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
